@@ -1,5 +1,8 @@
+from classes.pessoa import Pessoa
+
 def main():
     print("Hello World!")
+    
 
 
 
