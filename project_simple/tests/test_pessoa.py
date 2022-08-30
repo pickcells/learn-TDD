@@ -17,12 +17,8 @@ class TestePessoa(TestCase):
     def setUp(self):
         self.pessoa = Pessoa()
     
-    def test_pessoa_init(self):
+    def test_pessoa(self):
         self.assertEqual(self.pessoa.get_name, "")
-        self.assertEqual(self.pessoa.get_birth_year, 0)
-        self.assertEqual(self.pessoa.get_weight, 0.0)
-    
-    
 
-
-main(verbosity=2)
+if __name__ == '__main__':
+    main(verbosity=2)
