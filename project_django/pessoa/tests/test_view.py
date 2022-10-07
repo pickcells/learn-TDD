@@ -9,4 +9,8 @@ class PessoaTestCase(TestCase):
     
     def test_pessoa_nome(self):
         pessoa = Pessoa.objects.get(nome="Maria")
-        self.assertEqual(pessoa.nome, "maria")
+        self.assertEqual(pessoa.nome, "Maria")
+    
+    def test_pessoa_idade(self):
+        pessoa = Pessoa.objects.get(nome="José")
+        self.assertEqual(pessoa.idade, 30)

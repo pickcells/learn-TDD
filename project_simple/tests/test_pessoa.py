@@ -19,6 +19,12 @@ class TestePessoa(TestCase):
     
     def test_pessoa(self):
         self.assertEqual(self.pessoa.get_name, "")
+        
+    def test_pessoa_name_is_string_type(self):
+        self.assertEqual(type(self.pessoa.get_name), str)
+        
+    def test_pessoa_birth_year_is_not_int_type(self):
+        self.assertNotEqual(type(self.pessoa.get_birth_year), int)
 
 if __name__ == '__main__':
     main(verbosity=2)
